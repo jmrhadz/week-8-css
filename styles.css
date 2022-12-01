@@ -182,10 +182,9 @@ input not .submit {
     background:rgb(0,0,0,);
     background: rgba(0,0,0,.75);
     color:white;
-    width:80%;
+    width:max-content;
     transition: .5s ease;
     opacity:0;
-    color:white;
     font-size:15px;
     padding:10px;
     text-align: center;
@@ -209,6 +208,10 @@ input not .submit {
     .gallery {
         column-count: 3;
     }
+    .overlay {
+        font-size:medium;
+        
+    }
 }
 @media screen and (max-width: 480px) {
     .main {
@@ -225,6 +228,6 @@ input not .submit {
         
         column-count: 2;
     }
-        
+    
 }
 
