@@ -2,44 +2,29 @@
     font-family: 'Assistant', sans-serif;
     color: rgb(32, 32, 32);
     padding: 0px 5px;
-    
+    margin-top:0;
 }
-
 
 .nav {
     z-index: 100;
-    left:0;
-    position:fixed;
-    top: 0;
     width:100%;
-    padding: 0px 15px 0px 15px;
-    
+    padding: 0px 5px 0px 5px;
+    display:flex;
+    justify-content: flex-start;
+    align-content:space-evenly;
     background-color: rgb(87, 87, 87);
-    
 }
 
 .nav > a {
     padding: 5px;
-    max-width:25%;
-    
-        
+    max-width:25%;  
 }
 
 a {
-    float: left;
     text-decoration-line: none;
     color:white;
     text-shadow: 2px;
-    display:flexbox;
-    padding: 10px;
-    
-}
-
-
-
-.main {
-    position:relative;
-    top:40px;
+    padding: 5px;
 }
 
 a:hover {
@@ -54,9 +39,13 @@ a.active {
     top:0;
 }
 
+.main {
+    position:relative;
+    top:40px;
+}
+
 h1 {    
     margin-top: 5px;
-    
 }
 
 h3 {
@@ -65,16 +54,12 @@ h3 {
     color:white;
     padding:30px;
     max-width:fit-content;
-    
 }
 
 p {
     margin:auto;
     padding: 30px;
 }
-
-
-
 
 ul {
     list-style-type: none;
@@ -83,10 +68,6 @@ ul {
 .bullet {
     list-style: square inside;
 }
-
-
-
-
 
 th {
     display: box;
@@ -111,20 +92,23 @@ td {
     background-color: rgb(200,200,200);
     max-width: fit-content;
 }
+
 .inner-print-block {
     display:block;
     background-color:white;
     border-top:3px;
     padding:5%;
 }
+
 li {
     margin: 1%;
 }
+
 form {
     margin-top:10px;
 }
+
 .form {
-    
     display:block;
     background-color: rgb(87, 87, 87);
     padding:10px;
@@ -141,7 +125,14 @@ form > label {
     display:none;
 }
 
+.textbox {
+    width: 70%;
+    margin-bottom: 10px;
+}
 
+#contact-body {
+    min-height: 100px;
+}
 
 #submit {
     width: 30%;
@@ -156,18 +147,11 @@ form > label {
     padding:3%;
 }
 
-.textbox {
-    width: 70%;
-    margin-bottom: 10px;
-}
 #submit:hover {
     background-color:white;
     color:black;
 }
 
-#contact-body {
-    min-height: 100px;
-}
 
 .gallery {
     line-height: 0;
@@ -190,7 +174,7 @@ form > label {
     position: absolute;
     right:3%;
     bottom:10px;
-    background:rgb(0,0,0,);
+    background:rgb(0,0,0);
     background: rgba(0,0,0,.75);
     color:white;
     width:max-content;
@@ -235,6 +219,7 @@ form > label {
         margin-top:0;
     }
 }
+
 @media screen and (max-width: 480px) {
     .main {
     width:100%;
@@ -263,4 +248,3 @@ form > label {
         margin-top:0;
     }
 }
-
