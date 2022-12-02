@@ -120,8 +120,11 @@ td {
 li {
     margin: 1%;
 }
-
+form {
+    margin-top:10px;
+}
 .form {
+    
     display:block;
     background-color: rgb(87, 87, 87);
     padding:10px;
@@ -141,14 +144,16 @@ form > label {
 
 
 #submit {
-    width:max-content;
+    width: 30%;
     margin:5px;
     display:block;
     background-color:rgb(32, 32, 32);
     color:white;
-    right:0;
     border-width:2px;
-    border-color:rgb(120,120,120)
+    border-color:rgb(120,120,120);
+    position:relative;
+    left:60%;
+    padding:3%;
 }
 
 .textbox {
@@ -226,6 +231,9 @@ form > label {
         width:90%;
         margin-bottom:5px;
     }
+    form {
+        margin-top:0;
+    }
 }
 @media screen and (max-width: 480px) {
     .main {
@@ -251,6 +259,8 @@ form > label {
         padding: 10px;
         margin-bottom:0;
     }
-    
+    form {
+        margin-top:0;
+    }
 }
 
