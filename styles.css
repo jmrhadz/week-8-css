@@ -153,6 +153,7 @@ form > label {
 
 .textbox {
     width: 70%;
+    margin-bottom: 10px;
 }
 #submit:hover {
     background-color:white;
@@ -221,6 +222,10 @@ form > label {
     .label-break {
         display:block;
     }
+    .textbox {
+        width:90%;
+        margin-bottom:5px;
+    }
 }
 @media screen and (max-width: 480px) {
     .main {
@@ -232,7 +237,7 @@ form > label {
     }
     .form {
         margin:0;
-        text-align: left;
+        text-align: center;
     }
     .gallery {
         
@@ -240,6 +245,11 @@ form > label {
     }
     .label-break {
         display:block;
+    }
+    .textbox {
+        width: 90%;
+        padding: 10px;
+        margin-bottom:0;
     }
     
 }
