@@ -109,6 +109,7 @@ td {
     padding: 5px;
     display:block;
     background-color: rgb(200,200,200);
+    max-width: fit-content;
 }
 .inner-print-block {
     display:block;
@@ -120,17 +121,21 @@ li {
     margin: 1%;
 }
 
-form {
+.form {
     display:block;
     background-color: rgb(87, 87, 87);
     padding:10px;
     text-align: right;
     margin:10% 25%;
-    
+    justify-content: center;
 }
 
 form > label {
     color:white;
+}
+
+.label-break {
+    display:none;
 }
 
 
@@ -146,8 +151,8 @@ form > label {
     border-color:rgb(120,120,120)
 }
 
-input not .submit {
-    width: 85%;
+.textbox {
+    width: 70%;
 }
 #submit:hover {
     background-color:white;
@@ -202,8 +207,9 @@ input not .submit {
     .inner-print-block {
         padding:5%;
     }
-    form {
+    .form {
         margin:0;
+        text-align: left;
     }
     .gallery {
         column-count: 3;
@@ -221,12 +227,16 @@ input not .submit {
     .inner-print-block {
         padding:10% 5%;
     }
-    form {
+    .form {
         margin:0;
+        text-align: right;
     }
     .gallery {
         
         column-count: 2;
+    }
+    .label-break {
+        display:block;
     }
     
 }
